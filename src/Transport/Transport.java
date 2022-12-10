@@ -15,7 +15,7 @@ public abstract class Transport {
             this.model = model;
         } else {
             this.model = "Укажите модель";
-       }
+        }
         if (engineVolume <= 0) {
             this.engineVolume = 1.5;
         } else {
@@ -39,4 +39,10 @@ public abstract class Transport {
 
     public abstract void stop();
 
+    @Override
+    public String toString() {
+        return "brand='" + brand + '\'' +
+                ", model='" + model + '\'' +
+                ", engineVolume=" + engineVolume;
+    }
 }

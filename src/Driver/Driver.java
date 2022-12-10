@@ -28,7 +28,7 @@ public abstract class Driver<T extends Transport> {
     public abstract void refillAuto(T transport);
 
     public void printInfo(T transport) {
-        System.out.println("водитель " + getName() + " управляет автомобилем "
+        System.out.println("водитель " + getName() + " управляет "
                 + transport.getBrand() + " и будет участвовать в заезде!");
     }
     public String getName() {

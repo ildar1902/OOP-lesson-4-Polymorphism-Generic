@@ -32,12 +32,14 @@ public class Main {
                 "Андрей",
                 true,
                 6);
+        andrey.refillAuto(car1);
         andrey.printInfo(car1);
-        car1.start();
+        andrey.startDrive(car1);
         car1.pitStop();
-        car1.stop();
-        System.out.println("car1.bestLapTime() = " + car1.bestLapTime());
-        System.out.println("car1.maxSpeed() = " + car1.maxSpeed());
+        andrey.stopDrive(car1);
+        System.out.println("Лучшее время круга у водителя по имени "
+                + andrey.getName() + " составляет " + car1.bestLapTime() + " минут!");
+        System.out.println("А максимальная скорость составила " + car1.maxSpeed() + "км/ч!");
         System.out.println(bus2);
         DriverD stepan = new DriverD(
                 "Степан",
@@ -47,8 +49,9 @@ public class Main {
         bus2.start();
         bus2.pitStop();
         bus2.stop();
-        System.out.println("bus2.bestLapTime() = " + bus2.bestLapTime());
-        System.out.println("bus2.maxSpeed() = " + bus2.maxSpeed());
+        System.out.println("Лучшее время круга у водителя по имени "
+                + stepan.getName() + " составляет " + bus2.bestLapTime() + " минут!");
+        System.out.println("А максимальная скорость составила " + bus2.maxSpeed() + "км/ч!");
         System.out.println(truck3);
         DriverC anton = new DriverC(
                 "Антон",
@@ -58,8 +61,9 @@ public class Main {
         truck3.start();
         truck3.pitStop();
         truck3.stop();
-        System.out.println("truck3.bestLapTime() = " + truck3.bestLapTime());
-        System.out.println("truck3.maxSpeed() = " + truck3.maxSpeed());
+        System.out.println("Лучшее время круга у водителя по имени "
+                + anton.getName() + " составляет " + truck3.bestLapTime() + " минут!");
+        System.out.println("А максимальная скорость составила " + truck3.maxSpeed() + "км/ч!");
 
 
     }
